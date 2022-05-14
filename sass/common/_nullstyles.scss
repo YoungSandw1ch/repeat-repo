@@ -1,13 +1,3 @@
-:root {
-  --firstFontColor: #212121;
-  --secondFontColor: #757575;
-  --lightFontColor: #ffffff;
-  --brandColor: #2196f3;
-  --brandHover: #188ce8;
-  --secondBgColor: #f5f4fa;
-  --darkBgColor: #2f303a;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -47,15 +37,3 @@ button {
 a {
   text-decoration: none;
 }
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  overflow: hidden;
-}
-/*# sourceMappingURL=main.css.map */
