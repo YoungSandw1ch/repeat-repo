@@ -10,61 +10,70 @@
 </head>
 
 <body>
-  <header>
-    <a href="./index.html"><span>Web</span>Studio</a>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="./index.html" class="menu__link" target="_blank">Студия</a>
+  <header class="header">
+    <div class="container">
+      <a href="./index.html" class="logo header__logo"><span class="logo__text">Web</span>Studio</a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link" target="_blank">Студия</a>
+          </li>
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link" target="_blank">Портфолио</a>
+          </li>
+          <li class="menu__item">
+            <a href="./index.html" class="menu__link" target="_blank">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="menu__item">
-          <a href="./index.html" class="menu__link" target="_blank">Портфолио</a>
-        </li>
-        <li class="menu__item">
-          <a href="./index.html" class="menu__link" target="_blank">Контакты</a>
+        <li class="contacts__item">
+          <a href="telto:+38 096 111 11 11">+38 096 111 11 11</a>
         </li>
       </ul>
-    </nav>
-    <ul class="contacts">
-      <li class="contacts__item">
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </li>
-      <li class="contacts__item">
-        <a href="telto:+38 096 111 11 11">+38 096 111 11 11</a>
-      </li>
-    </ul>
+    </div>
   </header>
   <main>
     <section class="hero">
-      <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-      <button class="button hero__button" type="button">Заказать услугу</button>
+      <div class="container">
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button class="button hero__button" type="button">Заказать услугу</button>
+      </div>
     </section>
     <section class="section features">
-      <h2 class="visualy-hidden">Наши преимущества</h2>
-      <ul class="features__list">
-        <li class="features__item">
-          <h3 class="features__title">Внимание к деталям</h3>
-          <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Пунктуальность</h3>
-          <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-          </p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Планирование</h3>
-          <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает.
-          </p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Современные технологии</h3>
-          <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visualy-hidden">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">Внимание к деталям</h3>
+            <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Пунктуальность</h3>
+            <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+              собой.
+            </p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Планирование</h3>
+            <p class="features__text">Равным образом консультация с широким активом в значительной степени
+              обуславливает.
+            </p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Современные технологии</h3>
+            <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="section works">
-      <ul class="works__list">
-        <div class="container">
+      <div class="container">
+        <ul class="works__list">
           <li class="works__item">
             <img src="" alt="" class="works__img">
           </li>
@@ -74,7 +83,7 @@
           <li class="works__item">
             <img src="" alt="" class="works__img">
           </li>
-      </ul>
+        </ul>
       </div>
     </section>
   </main>
