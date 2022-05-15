@@ -2,3 +2,13 @@
 @import './common/variables';
 @import './common/nullstyles';
 @import './utils/visually-hidden';
+//=====components
+@import './components/container';
+@import './components/logo';
+@import './components/menu';
+@import './components/contacts';
+@import './components/buttons';
+//=====layouts
+@import './layout/header';
+@import './layout/hero';
+@import './layout/section';
