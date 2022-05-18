@@ -87,6 +87,10 @@ a {
   color: var(--firstFontColor);
 }
 
+.menu__link:hover, .menu__link:focus {
+  color: var(--brandColor);
+}
+
 .menu__link--active {
   color: var(--brandColor);
 }
@@ -127,6 +131,14 @@ a {
 
 .button:hover, .button:focus {
   background-color: var(--brandHover);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.666;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .hero {
