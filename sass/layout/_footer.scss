@@ -1,0 +1,25 @@
+.footer {
+}
+
+.footer__box {
+}
+
+.footer__logo {
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__link {
+  text-decoration: none;
+  color: var(--lightFontColor);
+
+  &:hover,
+  &:focus {
+    color: var(--brandColor);
+  }
+}
+
+.footer__contacts {
+}

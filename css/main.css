@@ -77,6 +77,10 @@ a {
 }
 
 .logo__text {
+  color: var(--lightFontColor);
+}
+
+.logo__text--dark {
   color: var(--firstFontColor);
 }
 
@@ -178,5 +182,33 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.team {
+  font-size: 16px;
+  line-height: 1.187;
+}
+
+.team__heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+}
+
+.team__text {
+  color: var(--secondFontColor);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__link {
+  text-decoration: none;
+  color: var(--lightFontColor);
+}
+
+.address__link:hover, .address__link:focus {
+  color: var(--brandColor);
 }
 /*# sourceMappingURL=main.css.map */

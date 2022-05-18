@@ -8,5 +8,9 @@
 }
 
 .logo__text {
+  color: var(--lightFontColor);
+}
+
+.logo__text--dark {
   color: var(--firstFontColor);
 }
