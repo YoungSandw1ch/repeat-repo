@@ -10,23 +10,3 @@
 .footer__logo {
   margin-bottom: 20px;
 }
-
-.address {
-  font-style: normal;
-}
-
-.address__link {
-  display: block;
-  text-decoration: none;
-  color: var(--lightFontColor);
-  margin-bottom: 9px;
-
-  &:hover,
-  &:focus {
-    color: var(--brandColor);
-  }
-}
-
-.footer__contacts {
-  flex-direction: column;
-}

@@ -1,0 +1,32 @@
+.address {
+  font-style: normal;
+}
+
+.address__list {
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  display: block;
+  text-decoration: none;
+  color: var(--secondFontColor);
+
+  &:hover,
+  &:focus {
+    color: var(--brandColor);
+  }
+}
+
+.address__map {
+  color: var(--lightFontColor);
+
+  &:hover,
+  &:focus {
+    color: var(--brandColor);
+  }
+}

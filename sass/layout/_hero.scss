@@ -1,8 +1,11 @@
 .hero {
+  margin: 0 auto;
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--darkBgColor);
+  background-image: url(../images/hero-image.jpeg);
+  background-repeat: no-repeat;
 }
 
 .hero__container {

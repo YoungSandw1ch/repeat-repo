@@ -10,10 +10,6 @@
   &:not(:last-child) {
     margin-right: 50px;
   }
-
-  &--bottom-indent {
-    margin-bottom: 9px;
-  }
 }
 
 .contacts__link {
@@ -22,8 +18,16 @@
   letter-spacing: 0.02em;
   color: var(--secondFontColor);
 
+  display: flex;
+  align-items: center;
+
   &:hover,
   &:focus {
     color: var(--brandColor);
   }
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
