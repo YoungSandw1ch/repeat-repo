@@ -8,6 +8,10 @@
   --darkBgColor: #2f303a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -223,8 +227,14 @@ a {
 }
 
 .product__link {
+  display: block;
   text-decoration: none;
   color: var(--firstFontColor);
+}
+
+.product__link:focus, .product__link:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .product__box {
@@ -347,7 +357,8 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--darkBgColor);
-  background-image: url(../images/hero-image.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-image.jpeg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpeg);
   background-repeat: no-repeat;
 }
 
