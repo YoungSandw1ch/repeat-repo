@@ -18,8 +18,8 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <a href="./index.html" class="logo header__logo">Web<span class="logo__text">Studio</span></a>
+    <div class="container header__container">
+      <a href="./index.html" class="logo header__logo">Web<span class="logo__text logo__text--dark">Studio</span></a>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
@@ -33,7 +33,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="contacts">
+      <ul class="contacts header__contacts">
         <li class="contacts__item">
           <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
         </li>
@@ -44,10 +44,10 @@
     </div>
   </header>
   <main>
-    <section class="portfolio">
+    <section class="section portfolio">
       <div class="container">
         <h2 class="visually-hidden">Портфолио</h2>
-        <ul class="filter">
+        <ul class="filter portfolio__filter">
           <li class="filter__item">
             <button class="filter__btn" type="button">Все</button>
           </li>
@@ -164,17 +164,6 @@
               </div>
             </a>
           </li>
-          <li class="product__item">
-            <a href="#" class="product__link">
-              <picture>
-                <img src="./images/product/product-1.jpeg" alt="продукт-1" class="product__img" width="370">
-              </picture>
-              <div class="product__box">
-                <h3 class="product__heading">Технокряк</h3>
-                <p class="product__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
         </ul>
       </div>
     </section>
@@ -186,10 +175,10 @@
         <address class="address" id="contacts">
           <a href="#" class="address__link" title="адрес на карте">г. Киев, пр-т Леси Украинки, 26</a>
           <ul class="contacts footer__contacts">
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--bottom-indent">
               <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--bottom-indent">
               <a href="tel:+38 096 111 11 11" class="contacts__link">+38 096 111 11 11</a>
             </li>
           </ul>

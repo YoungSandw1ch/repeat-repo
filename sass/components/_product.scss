@@ -1,0 +1,38 @@
+.product {
+  display: flex;
+  margin: -15px;
+  flex-wrap: wrap;
+}
+
+.product__item {
+  flex-basis: 370px;
+  margin: 15px;
+}
+
+.product__link {
+  text-decoration: none;
+  color: var(--firstFontColor);
+}
+
+.product__img {
+}
+
+.product__box {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.product__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.product__text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondFontColor);
+}
