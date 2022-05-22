@@ -11,6 +11,20 @@
   }
 }
 
+.features__box {
+  width: 270px;
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--secondBgColor);
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
 .features__title {
   font-weight: 700;
   line-height: 1.14;
