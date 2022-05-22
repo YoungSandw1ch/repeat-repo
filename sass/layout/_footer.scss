@@ -1,10 +1,14 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--darkBgColor);
 }
 
 .footer__box {
 }
 
 .footer__logo {
+  margin-bottom: 20px;
 }
 
 .address {
@@ -12,8 +16,10 @@
 }
 
 .address__link {
+  display: block;
   text-decoration: none;
   color: var(--lightFontColor);
+  margin-bottom: 9px;
 
   &:hover,
   &:focus {
@@ -22,4 +28,5 @@
 }
 
 .footer__contacts {
+  flex-direction: column;
 }

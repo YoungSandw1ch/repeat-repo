@@ -2,9 +2,13 @@
 }
 
 .menu__list {
+  display: flex;
 }
 
 .menu__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .menu__link {

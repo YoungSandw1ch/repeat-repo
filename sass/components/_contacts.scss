@@ -1,7 +1,19 @@
 .contacts {
+  display: flex;
+}
+
+.header__contacts {
+  margin-left: auto;
 }
 
 .contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &--bottom-indent {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__link {

@@ -1,0 +1,16 @@
+.works {
+  padding-top: 0;
+}
+
+.works__list {
+  display: flex;
+}
+
+.works__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.works__img {
+}

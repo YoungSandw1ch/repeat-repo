@@ -2,15 +2,20 @@
 }
 
 .features__list {
+  display: flex;
 }
 
 .features__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features__text {
