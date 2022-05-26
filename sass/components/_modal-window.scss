@@ -1,0 +1,73 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  opacity: 1;
+  transform: scale(1);
+
+  transition: opacity 250ms var(--cubic), transform 250ms var(--cubic);
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(1.4);
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: var(--firstFontColor);
+  background-color: transparent;
+  transition: color 250ms var(--cubic), border-color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--brandColor);
+    border-color: var(--brandColor);
+  }
+}
+
+.modal__icon {
+  fill: currentColor;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overflow {
+  overflow: hidden;
+}
