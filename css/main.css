@@ -734,6 +734,7 @@ a {
 .form__checkbox:checked {
   background-color: var(--brandColor);
   border-color: var(--brandColor);
+  background-origin: border-box;
 }
 
 .form__agreement {
