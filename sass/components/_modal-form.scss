@@ -1,0 +1,46 @@
+.form {
+}
+
+.form__field {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: var(--secondFontColor);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form__wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.form__input {
+  display: block;
+  width: 448px;
+  height: 40px;
+
+  padding: 11px 12px 11px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form__field:focus-within .form__input {
+  border-color: var(--brandColor);
+}
+
+.form__field:focus-within .form__icon {
+  fill: var(--brandColor);
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
