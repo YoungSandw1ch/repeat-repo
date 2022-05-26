@@ -80,6 +80,8 @@ a {
   font-size: 26px;
   line-height: 1.19;
   color: var(--brandColor);
+  -webkit-animation: logoWayver 5000ms linear alternate infinite;
+          animation: logoWayver 5000ms linear alternate infinite;
 }
 
 .logo__text {
@@ -88,6 +90,52 @@ a {
 
 .logo__text--dark {
   color: var(--firstFontColor);
+}
+
+@-webkit-keyframes logoWayver {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  75% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes logoWayver {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  75% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .menu__list {
