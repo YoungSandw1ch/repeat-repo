@@ -13,6 +13,10 @@
   &:first-of-type {
     margin-right: 70px;
   }
+
+  &:last-of-type {
+    margin-left: auto;
+  }
 }
 
 .footer__logo {
