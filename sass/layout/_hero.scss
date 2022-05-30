@@ -17,6 +17,7 @@
 }
 
 .hero__title {
+  margin-bottom: 30px;
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -25,8 +26,4 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--lightFontColor);
-  margin-bottom: 30px;
-}
-
-.hero__button {
 }

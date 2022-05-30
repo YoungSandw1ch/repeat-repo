@@ -29,7 +29,7 @@
   transition: opacity 250ms var(--cubic), transform 250ms var(--cubic);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.backdrop--is-hidden .modal {
   transform: scale(1.4);
 }
 
@@ -62,7 +62,7 @@
   fill: currentColor;
 }
 
-.is-hidden {
+.backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;

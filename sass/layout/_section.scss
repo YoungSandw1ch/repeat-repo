@@ -2,3 +2,22 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.section--no-top-padding {
+  padding-top: 0;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.666;
+  text-align: center;
+}
+
+.section__title--bottom-indent {
+  margin-bottom: 50px;
+}
+
+.section--bg-dark {
+  background-color: #f5f4fa;
+}

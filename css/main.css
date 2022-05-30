@@ -189,10 +189,6 @@ a {
   display: flex;
 }
 
-.header__contacts {
-  margin-left: auto;
-}
-
 .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -220,6 +216,9 @@ a {
 
 .contacts__icon {
   fill: currentColor;
+}
+
+.contacts__icon--left {
   margin-right: 10px;
 }
 
@@ -250,14 +249,6 @@ a {
 
 .button:hover, .button:focus {
   background-color: var(--brandHover);
-}
-
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.666;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .filter {
@@ -511,6 +502,9 @@ a {
 
 .signup__icon {
   fill: currentColor;
+}
+
+.signup__icon--right {
   margin-left: 10px;
 }
 
@@ -552,7 +546,7 @@ a {
   transition: opacity 250ms var(--cubic), transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.backdrop--is-hidden .modal {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
@@ -589,7 +583,7 @@ a {
   fill: currentColor;
 }
 
-.is-hidden {
+.backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -773,6 +767,10 @@ a {
   margin-right: 94px;
 }
 
+.header__contacts {
+  margin-left: auto;
+}
+
 .hero {
   margin: 0 auto;
   max-width: 1600px;
@@ -801,6 +799,7 @@ a {
 }
 
 .hero__title {
+  margin-bottom: 30px;
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -809,7 +808,6 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--lightFontColor);
-  margin-bottom: 30px;
 }
 
 .section {
@@ -817,11 +815,30 @@ a {
   padding-bottom: 94px;
 }
 
+.section--no-top-padding {
+  padding-top: 0;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.666;
+  text-align: center;
+}
+
+.section__title--bottom-indent {
+  margin-bottom: 50px;
+}
+
+.section--bg-dark {
+  background-color: #f5f4fa;
+}
+
 .portfolio__filter {
   margin-bottom: 50px;
 }
 
-.features__list {
+.features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,10 +878,6 @@ a {
 }
 
 .works {
-  padding-top: 0;
-}
-
-.works__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,15 +907,11 @@ a {
 }
 
 .team {
-  font-size: 16px;
-  line-height: 1.187;
-  background-color: #f5f4fa;
-}
-
-.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 16px;
+  line-height: 1.187;
 }
 
 .team__item {

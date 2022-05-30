@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.header__contacts {
-  margin-left: auto;
-}
-
 .contacts__item {
   &:not(:last-child) {
     margin-right: 50px;
@@ -34,5 +30,8 @@
 
 .contacts__icon {
   fill: currentColor;
+}
+
+.contacts__icon--left {
   margin-right: 10px;
 }
