@@ -1,0 +1,2 @@
+(()=>{const o={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]"),body:document.querySelector("body"),autofocusInput:document.querySelector('input[name="name"]')};function e(){o.modal.classList.toggle("backdrop--is-hidden"),o.body.classList.toggle("overflow"),o.autofocusInput.focus()}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
+//# sourceMappingURL=index.30e52afa.js.map
