@@ -5,18 +5,21 @@
 
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+  padding: 15px;
+  z-index: 200;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+
+  @media screen and (min-width: $mob) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
   padding: 40px;
 
   background-color: #ffffff;
@@ -27,6 +30,15 @@
   opacity: 1;
   transform: scale(1);
   transition: opacity 250ms var(--cubic), transform 250ms var(--cubic);
+
+  @media screen and (min-width: $mob) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desk) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.backdrop--is-hidden .modal {
@@ -74,8 +86,12 @@
 
 .modal__text {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
+
+  @media screen and(min-width: $mob) {
+    font-size: 20px;
+  }
 }
