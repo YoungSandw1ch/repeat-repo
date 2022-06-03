@@ -1,20 +1,34 @@
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-grow: 1;
 
-  background-color: #fff;
+  @media screen and (min-width: $tab) {
+    align-items: center;
+  }
 
-  transform: translateX(0);
-  transition: transform 250ms var(--cubic);
+  @media screen and (max-width: 767.5px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 48px 15px 48px 40px;
+
+    background-color: #fff;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out, opacity 250ms linear;
+
+    flex-direction: column;
+  }
 }
 
 .icon-is-hidden {
   display: none;
 }
 
-.mobile-menu--is-hidden {
-  transform: translateX(100%);
+.mobile-menu--is-open {
+  opacity: 1;
+  transform: translateX(0);
 }
