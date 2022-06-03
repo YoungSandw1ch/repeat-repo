@@ -4,7 +4,6 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     body: document.querySelector('body'),
-    autofocusInput: document.querySelector('input[name="name"]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -13,6 +12,5 @@
   function toggleModal() {
     refs.modal.classList.toggle('backdrop--is-hidden');
     refs.body.classList.toggle('overflow');
-    refs.autofocusInput.focus();
   }
 })();
