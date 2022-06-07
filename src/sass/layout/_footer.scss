@@ -5,22 +5,49 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: $tab) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tab) and (max-width: $deskmax) {
+    justify-content: space-around;
+  }
 }
 
 .footer__box {
-  &:first-of-type {
-    margin-right: 70px;
+  text-align: center;
+
+  @media screen and (max-width: $tabmax) {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
 
-  &:last-of-type {
-    margin-left: auto;
+  @media screen and (min-width: $tab) and (max-width: $deskmax) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desk) {
+    text-align: left;
+
+    &:first-of-type {
+      margin-right: 70px;
+    }
+
+    &:last-of-type {
+      margin-left: auto;
+    }
   }
 }
 
 .footer__logo {
   margin-bottom: 20px;
+
+  @media screen and (max-width: $deskmax) {
+    margin: 0 auto 20px auto;
+  }
 }
 
 .footer__text {

@@ -1,5 +1,7 @@
 .signup {
-  display: flex;
+  @media screen and (min-width: $desk) {
+    display: flex;
+  }
 }
 
 .signup__input {
@@ -9,7 +11,7 @@
   margin-right: 12px;
   padding: 15px 16px;
 
-  width: 358px;
+  width: 100%;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -27,6 +29,24 @@
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: $deskmax) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tab) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desk) {
+    width: 358px;
+  }
+}
+
+.signup__btn {
+  @media screen and (max-width: $deskmax) {
+    margin: 0 auto;
   }
 }
 
