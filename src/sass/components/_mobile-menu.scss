@@ -1,6 +1,7 @@
 .mobile-menu {
   display: flex;
   flex-grow: 1;
+  z-index: 50;
 
   @media screen and (min-width: $tab) {
     align-items: center;

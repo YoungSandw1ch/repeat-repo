@@ -2,5 +2,13 @@
 }
 
 .portfolio__filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tab) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tab) {
+    margin-bottom: 50px;
+  }
 }
