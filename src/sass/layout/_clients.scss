@@ -1,14 +1,30 @@
 .clients {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $deskmax) {
+    margin: -15px;
+  }
 }
 
 .clients__item {
-  width: 170px;
+  width: 210px;
   height: 92px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: $deskmax) {
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $tab) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desk) {
+    width: 170px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
