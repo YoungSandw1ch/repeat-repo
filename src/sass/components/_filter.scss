@@ -32,3 +32,29 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+
+.anime {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0% {
+    visibility: visible;
+    height: 200px;
+  }
+  100% {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    max-width: 0;
+    font-size: 0;
+    margin: 0;
+  }
+}

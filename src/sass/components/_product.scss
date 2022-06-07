@@ -7,6 +7,8 @@
 }
 
 .product__item {
+  transition: transform 250ms linear, opacity 250ms linear;
+
   @media screen and (max-width: $tabmax) {
     &:not(:last-child) {
       margin-bottom: 30px;
