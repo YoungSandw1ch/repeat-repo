@@ -12,6 +12,12 @@
   padding-top: 0;
 }
 
+.section--mobile-none {
+  @media screen and (max-width: 1199.5px) {
+    display: none;
+  }
+}
+
 .section__title {
   font-weight: 700;
   font-size: 36px;
