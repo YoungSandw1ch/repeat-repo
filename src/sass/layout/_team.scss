@@ -1,7 +1,15 @@
 .team {
-  display: flex;
   font-size: 16px;
   line-height: 1.187;
+
+  @media screen and (min-width: $tab) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tab) and (max-width: 1199.5px) {
+    margin: -15px;
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
@@ -10,8 +18,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767.5px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tab) and (max-width: 1199.5px) {
+    flex-basis: calc((100% - 15px * 4) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desk) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -20,8 +41,12 @@
 
 .team__box {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
+
+  @media screen and (min-width: $desk) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__heading {
