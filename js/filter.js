@@ -10,7 +10,7 @@ function app() {
       if (isItemFiltered && !isShowAll) {
         item.classList.add('anime');
       } else {
-        item.classList.remove('hide');
+        // item.classList.remove('hide');
         item.classList.remove('anime');
       }
     });
@@ -34,13 +34,13 @@ function app() {
     });
   });
 
-  cards.forEach(card => {
-    card.ontransitionend = function () {
-      if (card.classList.contains('anime')) {
-        card.classList.add('hide');
-      }
-    };
-  });
+  // cards.forEach(card => {
+  //   card.ontransitionend = function () {
+  //     if (card.classList.contains('anime')) {
+  //       card.classList.add('hide');
+  //     }
+  //   };
+  // });
 }
 
 app();
