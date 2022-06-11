@@ -1,2 +1,0 @@
-!function(){var t,n;t=document.querySelectorAll(".filter__btn"),n=document.querySelectorAll(".product__item"),t.forEach((function(t){t.addEventListener("click",(function(){var e,i=t.dataset.filter;e=i,n.forEach((function(t){var n=!t.classList.contains(e),i="all"===e.toLowerCase();n&&!i?t.classList.add("anime"):(t.classList.remove("hide"),t.classList.remove("anime"))}))}))})),n.forEach((function(t){t.ontransitionend=function(){t.classList.contains("anime")&&t.classList.add("hide")}}))}();
-//# sourceMappingURL=portfolio.1c93c230.js.map

@@ -1,2 +1,0 @@
-!function(){const t=document.querySelectorAll(".filter__btn"),e=document.querySelectorAll(".product__item");t.forEach((t=>{t.addEventListener("click",(()=>{const s=t.dataset.filter;var a;a=s,e.forEach((t=>{const e=!t.classList.contains(a),s="all"===a.toLowerCase();e&&!s?t.classList.add("anime"):(t.classList.remove("hide"),t.classList.remove("anime"))}))}))})),e.forEach((t=>{t.ontransitionend=function(){t.classList.contains("anime")&&t.classList.add("hide")}}))}();
-//# sourceMappingURL=portfolio.67d02883.js.map
