@@ -20,7 +20,15 @@ function app() {
     button.addEventListener('click', () => {
       const currentCategory = button.dataset.filter;
 
-      console.log(currentCategory);
+      buttons.forEach(button => {
+        const hasActiveClass = button.classList.contains('filter__btn--active');
+
+        if (hasActiveClass) {
+          button.classList.remove('filter__btn--active');
+        }
+      });
+
+      button.classList.add('filter__btn--active');
 
       filter(currentCategory, cards);
     });
