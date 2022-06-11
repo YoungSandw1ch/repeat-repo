@@ -10,6 +10,8 @@
 
 .filter__item {
   margin: 5px 4px;
+
+  // transition: 50ms all;
 }
 
 .filter__btn {
@@ -34,14 +36,16 @@
 }
 
 .anime {
-  transform: scale(0);
-  opacity: 0;
+  // transform: scale(0);
+  // opacity: 0;
+  display: none;
 }
 
 .hide {
-  animation-name: hide;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  // animation-name: hide;
+  // animation-duration: 1ms;
+  // animation-fill-mode: forwards;
+  display: none;
 }
 
 @keyframes hide {

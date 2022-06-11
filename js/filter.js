@@ -19,6 +19,9 @@ function app() {
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       const currentCategory = button.dataset.filter;
+
+      console.log(currentCategory);
+
       filter(currentCategory, cards);
     });
   });
